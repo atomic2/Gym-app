@@ -144,6 +144,7 @@
                             </div>
                         </div>
 
+                        <!-- RESTORED EXERCISE INTELLIGENCE PANEL (Last Workout & PRs) -->
                         <div id="exercise-history-panel" class="hidden mt-2">
                             <h3 class="text-xs font-bold text-gray-300 uppercase tracking-wider mb-2 solid-element px-2 py-1 rounded inline-block">Exercise Intelligence</h3>
                             <div class="grid grid-cols-2 gap-3 text-sm">
@@ -265,6 +266,17 @@
             "Quads": ["Back Squat", "Front Squat", "Goblet Squat", "Box Squat", "Safety Bar Squat", "Zercher Squat", "Hack Squat (Machine)", "Hack Squat (Barbell)", "Leg Press", "Single-Leg Leg Press", "Bulgarian Split Squat", "Lunges (Forward)", "Lunges (Reverse)", "Walking Lunges", "Leg Extension (Machine)", "Sissy Squat", "Step-ups", "Smith Machine Squat", "Spanish Squat"],
             "Hamstrings": ["Romanian Deadlift (Barbell)", "Romanian Deadlift (Dumbbell)", "Stiff-Legged Deadlift", "Glute-Ham Raise (GHR)", "Nordic Hamstring Curl", "Seated Leg Curl (Machine)", "Lying Leg Curl (Machine)", "Standing Leg Curl (Machine)", "Single-Leg RDL", "Kettlebell Swings", "Cable Pull-throughs"],
             "Calves": ["Standing Calf Raise (Machine)", "Standing Calf Raise (Barbell)", "Standing Calf Raise (Dumbbell)", "Seated Calf Raise (Machine)", "Leg Press Calf Raise", "Donkey Calf Raise", "Single-Leg Calf Raise", "Tibialis Raise"]
+        };
+
+        const defaultActiveExercises = {
+            "Chest": ["Bench Press (Barbell)", "Incline Bench Press (Dumbbell)", "Push-ups", "Flat Cable Fly"],
+            "Back": ["Pull-ups", "Lat Pulldown (Wide Grip)", "Barbell Row (Pendlay)", "Deadlift (Conventional)"],
+            "Shoulders": ["Overhead Press (Dumbbell)", "Lateral Raise (Dumbbell)", "Face Pulls"],
+            "Biceps": ["Barbell Curl", "Hammer Curl (Dumbbell)", "Cable Curl (Straight Bar)"],
+            "Triceps": ["Tricep Pushdown (Rope)", "Skullcrushers (EZ-Bar)", "Tricep Dips (Bench)"],
+            "Quads": ["Back Squat", "Leg Press", "Leg Extension (Machine)", "Walking Lunges"],
+            "Hamstrings": ["Romanian Deadlift (Barbell)", "Lying Leg Curl (Machine)", "Seated Leg Curl (Machine)"],
+            "Calves": ["Standing Calf Raise (Machine)", "Seated Calf Raise (Machine)"]
         };
 
         const safeStore = {
